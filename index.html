@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input id="a" type = "text" />+<input id="b" type ="text" />
+        <button onclick = "sum()">=</button>
+        <output id = "c"></output>
+        <br>
+        <input id = "a1" type = "text" />-<input id = "b1" type = "text" />
+        <button onclick = "minus()">=</button>
+        <output id = "c1"></output>
+        <br>
+        <input id = "a2" type = "text" />*<input id = "b2" type = "text" />
+        <button onclick = "mutiple()">=</button>
+        <output id = "c2"></output>
+        <br>
+        <input id = "a3" type = "text" />/<input id = "b3" type = "text" />
+        <button onclick = "divide()">=</button>
+        <output id = "c3"></output>
+       
+        <script>
+            function sum(){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById('c').value = a+b
+            }
+            function minus(a,b){
+                var a = parseInt(document.getElementById('a1').value);
+                var b = parseInt(document.getElementById('b1').value);
+                document.getElementById('c1').value = a-b
+            }
+            function mutiple(a,b){
+                var a = parseInt(document.getElementById('a2').value);
+                var b = parseInt(document.getElementById('b2').value);
+                document.getElementById('c2').value = a*b
+            }
+            function divide(a,b){
+                var a = parseInt(document.getElementById('a3').value);
+                var b = parseInt(document.getElementById('b3').value);
+                document.getElementById('c3').value = a/b
+            }
+        </script>
+    </body>
+</html>
